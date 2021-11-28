@@ -32,6 +32,6 @@ elif (day == 5):
 elif(day == 6):
     result = "Saturday"
 else:
-    result = "An error in the calculations"    
+    result = "An error in the input data"    
 
 stdio.writeln("Day of the week: " + result)
