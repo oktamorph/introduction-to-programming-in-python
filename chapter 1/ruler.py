@@ -1,11 +1,11 @@
 import stdio
+import sys
 
-ruler1 = '1'
-ruler2 = ruler1 + ' 2 ' + ruler1
-ruler3 = ruler2 + ' 3 ' + ruler2
-ruler4 = ruler3 + ' 4 ' + ruler3
+n = int(sys.argv[1])
 
-stdio.writeln(ruler1)
-stdio.writeln(ruler2)
-stdio.writeln(ruler3)
-stdio.writeln(ruler4)
+ruler = '1'
+stdio.writeln(ruler)
+
+for i in range(2, n + 1):
+    ruler = ruler + ' ' + str(i) + ' ' + ruler
+    stdio.writeln(ruler)
